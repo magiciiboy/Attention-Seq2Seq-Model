@@ -17,9 +17,10 @@ We build 2 models:
 
 ## Results
 <table>
+    <tr><td colspan="2">Loss after each epoch ($N_{epoch}=100$)</td></tr>
     <tr>
-        <td><img src="./Loss-Seq2Seq.png" /></td>
-        <td><img src="./Loss-Seq2Seq+Attention.png" /></td>
+        <td><img src="./images/Loss-Seq2Seq.png" /></td>
+        <td><img src="./images/Loss-Seq2Seq+Attention.png" /></td>
     </tr>
 </table>
 
