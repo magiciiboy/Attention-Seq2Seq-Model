@@ -14,6 +14,8 @@ An automatically-generated data will contain sequences with repeated and unorder
 We build 2 models:
 - `Vanilla Seq2Seq` model used LSTM in Encoder and Decoder.
 - `Seq2Seq + Attention` model.
+    - Bahdanau's (additive) attention
+    - Luong's (multiplicative) attention
 
 ## Results
 <table>
@@ -31,6 +33,7 @@ We build 2 models:
 - Besides, one thing we can notice is the evaluating loss is less than training loss at each epoch step. This is unusual and interesting. However, it could be explained as the input and output has a clear formula of transformation that the output is ordered character-deduplicated string of the input. So that training and validating data set are genenerated without any human/third-party error. In this fashion, because there are less number of samples in validating set (5000/20000) and these samples may be not as difficult/long as in the training set, the model performs better in validating data set.
 
 ## References
+- [Neural Machine Translation by Jointly Learning to Align and Translate" (2015)](https://arxiv.org/pdf/1409.0473.pdf)
 - [Effective Approaches to Attention-based Neural Machine Translation" (2015)](https://arxiv.org/pdf/1508.04025.pdf)
 - [Attention Is All You Need (2017)](https://arxiv.org/pdf/1706.03762.pdf)
 
